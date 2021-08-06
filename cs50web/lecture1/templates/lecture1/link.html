@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Link!</title>
+    </head>
+
+    <body>
+        <!--
+            https://stackoverflow.com/questions/22938101/best-way-of-linking-to-a-page-in-django
+            https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml
+        -->
+    
+        <a href="https://google.com"> Click Here!</a>
+        <hr>
+        <a href="https://google.com" target="_blank"> On a new Tab!</a>
+        <hr>
+        {% comment %}
+            In django works like this 
+            "{% url 'list' %}" for different page on same site
+        {% endcomment %}
+        
+        <a href="{% url 'lists' %}" > To do Lists page!! </a>
+        <hr> 
+        <a href="{% url 'lists' %}" target="_blank"> To do Lists page in a New tab!! </a> 
+    
+    </body>
+</html>
