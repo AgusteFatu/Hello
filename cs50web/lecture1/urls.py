@@ -12,6 +12,7 @@ urlpatterns = [
     path("link",views.link,name="link"),
     path("table",views.table,name="table"),
     path("form",views.form,name="form"),
+    path("style",views.style,name="style"),
 
 
 

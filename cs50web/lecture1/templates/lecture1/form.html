@@ -7,7 +7,44 @@
         <form action="">
             <input type="text" placeholder="Full Name" name="name">
             <input type="submit" >
-
         </form>
+
+        <hr>
+
+        <form action="">
+
+            <div>
+                <input type="text" placeholder="Name", name=name2>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            
+            <div>
+                Favorite color?
+                <input type="radio" name="color" value="red"> red
+                <input type="radio" name="color" value="green"> green
+                <input type="radio" name="color" value="blue"> blue
+                <input type="radio" name="color" value="other"> other
+                
+            </div>
+
+            <div>
+                <input list="countries" name="country" placeholder="Country">
+                <datalist id="countries">
+                    <option value = "Afganistan">
+                    <option value = "Albania">
+                    <option value = "Algeria">
+
+                    </option>
+
+
+
+                </datalist>
+
+
+            </div>
+
+            
+        </form>
+
     </body>
 </html>

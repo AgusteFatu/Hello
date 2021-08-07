@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*5_os3v1$@7e((fi*53$(0%f6_jo=a8^f*34id&288x1_n)9b0'
+# Not anymore 
+# SECRET_KEY = 'django-insecure-*5_os3v1$@7e((fi*53$(0%f6_jo=a8^f*34id&288x1_n)9b0'
+SECRET_KEY = 'a6*f5@7qa!bu#0-n5t$zg5iju)@m1=12gdkexk2hvr9k#p4nkk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -119,6 +122,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/static/',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

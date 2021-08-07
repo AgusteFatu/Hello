@@ -27,7 +27,8 @@ def table(request):
 def form(request):
     return render (request,'lecture1/form.html')
 
-
+def style(request):
+    return render (request,'lecture1/style.html')
 
 
 def alper(request):

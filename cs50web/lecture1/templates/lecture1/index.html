@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Hello!</title>
+        <title>Lecture 1!</title>
     </head>
 
     <body>
-        <h1>Hello, World!</h1>
-    </body>
+        <h1 >Hello, World! Lecture 1 !!!</h1>
 
+        <h4> List of Pages </h4>
+        <ul>
+            <li> <a href="{% url 'hello' %}">Hello!</a> </li>
+            <li> <a href="{% url 'headings' %}">Headings!</a> </li>
+            <li> <a href="{% url 'image' %}">Image!</a> </li>
+            <li> <a href="{% url 'lists' %}">Lists!</a> </li>
+            <li> <a href="{% url 'link' %}">Link!</a> </li>
+            <li> <a href="{% url 'table' %}">Table!</a> </li>
+            <li> <a href="{% url 'form' %}">Forms!</a> </li>
+            <li> <a href="{% url 'style' %}">Style!</a> </li>
+
+
+        </ul>
+
+        
+        <style>
+            .myDiv{
+                border-left: 7px outset black;
+                border-top: 5px inset rgba(192, 192, 192, 0.5);
+                border-bottom: 5px outset rgba(192, 192, 192, 0.5);
+                border-right: 5px inset rgba(192, 192, 192, 0.5);
+                background-color: silver;
+            }
+
+        </style>
+
+        <div class = "myDiv"> 
+            <h3> Code </h3>
+         </div>
+    </body>
 </html>

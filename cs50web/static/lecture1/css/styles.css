@@ -1,0 +1,17 @@
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+.testDiv{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-left: 7px outset black;
+    border-top: 5px inset rgba(192, 192, 192, 0.5);
+    border-bottom: 5px outset rgba(192, 192, 192, 0.5);
+    border-right: 5px inset rgba(192, 192, 192, 0.5);
+    background-color: silver;
+}
