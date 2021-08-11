@@ -2,6 +2,25 @@
 <html lang = "en">
     <head>
         <title>Table!</title>
+
+        <style>
+            .customTable{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            .customTH{
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            .customTD{
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+        </style>
+
     </head>
 
     <body>
@@ -28,6 +47,61 @@
 
             </tbody>
         </table>
+
+        <hr>
+        <!-- Custom Table  ----------------------------------------------------------------------->
+        <table class="customTable"> <!-- Table -->
+            <thead > <!-- Heading of table-->
+                <tr>
+                    <th class="customTH">Ocean</th> <!-- table headings One column -->
+                    <th class="customTH">Average Depth</th> <!-- Second Column .. -->
+                    <th class="customTH">Maximum Depth</th>
+                </tr>
+                </thead>
+            <tbody> <!-- Table Body -->
+                <tr> <!-- Table Row -->
+                    <td class="customTD">Pacific Ocean </td> <!-- Table Data cells -->
+                    <td class="customTD">4,280 m</td>
+                    <td class="customTD">10,911 m</td>
+                </tr> 
+
+                <tr>
+                    <td class="customTD">Atlantic Ocean</td>
+                    <td class="customTD">3,646 m</td>
+                    <td class="customTD">8,486 m </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table class="customTable"> <!-- Table -->
+            <thead > <!-- Heading of table-->
+                <tr>
+                    <th class="customTH">Ocean</th> <!-- table headings One column -->
+                    <th class="customTH">Average Depth</th> <!-- Second Column .. -->
+                    <th class="customTH">Maximum Depth</th>
+                </tr>
+                </thead>
+            <tbody> <!-- Table Body -->
+                <tr> <!-- Table Row -->
+                    <td class="customTD">Pacific Ocean </td> <!-- Table Data cells -->
+                    <td class="customTD">4,280 m</td>
+                    <td class="customTD">10,911 m</td>
+                </tr> 
+
+                <tr>
+                    <td class="customTD">Atlantic Ocean</td>
+                    <td class="customTD">3,646 m</td>
+                    <td class="customTD">8,486 m </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
     </body>
 
 </html>

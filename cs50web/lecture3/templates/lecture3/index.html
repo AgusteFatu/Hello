@@ -1,0 +1,31 @@
+{% extends "lecture3/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block base_title %}Lecture3 - Home {% endblock %}</title>
+</head>
+<body >
+
+    {% block base %}
+            
+    <h1 style="text-align: center;"> Lecture 3 - Django </h1>
+    <ul style="font-size: 25px;">
+        
+        <li > <a class="n-UL" href="{% url 'lecture3:greet' 'kaan' %}"; title="Hello/anyName">Hello</a>  </li>
+        <li > <a class="n-UL" href="{% url 'lecture3:newyear' %}"; title="If - Else  , Static Files">New year</a>  </li>
+        <li > <a class="n-UL" href="{% url 'lecture3:tasks' %}"; title="">Tasks</a>  </li>
+            <ul>
+                <li > <a class="n-UL sec-S" href="{% url 'lecture3:add' %}"; title="">Add Task</a>  </li>
+
+            </ul>
+        <li > <a class="n-UL" href="{% url 'lecture3:sum' %}"; title="">Sum</a>  </li>
+            <ul>
+                <li > <a class="n-UL sec-S" href="{% url 'lecture3:statistics' %}"; title="">Statistics</a>  </li>
+
+            </ul>
+    </ul>
+    
+    {% endblock %}
+</body>
+</html> 

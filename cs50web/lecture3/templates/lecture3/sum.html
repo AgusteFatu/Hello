@@ -1,0 +1,41 @@
+{% extends "lecture3/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    {% block base %}
+    <h1>Numbers</h1>
+        <div class = "container"> 
+            <div class = "row">
+                <div class="col-sm">
+                    <form action="{% url 'lecture3:sum' %}" method="POST" >
+                        <div style="margin-left: 10px;" class ="input-group mb-3">
+                            <div class="input-group-prepend">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <input style="margin-bottom: 15px;" class="btn btn-primary btn-lg" type="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 
+                <div class="col-sm">
+                    one of thwo
+                </div>
+                -->
+            </div>
+        </div>
+
+        <hr class = "mt-0 mb-4">
+        <h3> Addition : {{ sum }} </h3>
+        <h3> Subtraction : {{ sub }} </h3>
+        <h3> Multiplication : {{ mul }} </h3>
+        <h3> Division : {{ div }} </h3>
+    {% endblock %}
+
+</body>
+</html>

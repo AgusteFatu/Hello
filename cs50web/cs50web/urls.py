@@ -19,9 +19,12 @@ from django.urls import path,include
 
 # This is the url page for all project
 
+app_name ='cs50'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='home'),
-    path('lecture1/',include("lecture1.urls")) # Connect new apps here 
+    path('lecture1/',include("lecture1.urls",namespace='lecture1')), # Connect new apps here 
+    path('lecture3/',include("lecture3.urls",namespace='lecture3')), 
+
 ]
 

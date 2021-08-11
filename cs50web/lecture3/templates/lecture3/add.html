@@ -1,0 +1,25 @@
+{% extends "lecture3/layout.html" %}
+
+{% block base %}
+{% block body %}
+    <!--
+    <h1>Add Task</h1>
+    <form action="{% url 'lecture3:add' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="task" >
+        <input style="margin-bottom: 15px;" type="Submit">
+    </form>
+    -->
+    
+
+    <h1 style="text-align: center;"> Add New Task</h1>
+    <form action="{% url 'lecture3:add' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input style="margin-bottom: 15px; " class="btn btn-primary" type="Submit" value="Add">
+    </form>
+
+    <a href="{% url 'lecture3:tasks' %}" class="btn btn-primary" >View Tasks</a>
+
+{% endblock %}
+{% endblock %}

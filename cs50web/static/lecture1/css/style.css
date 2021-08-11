@@ -1,0 +1,15 @@
+h1 {
+    color:rgb(247, 0, 255);
+    text-align: center;
+}
+
+.testDiv{
+    position:fixed;
+    padding: 10px;
+    bottom: 0;
+    width: 20%;
+    text-align: center;
+    background-color:#e7e9eb;
+   
+    border-radius: 20px;
+}

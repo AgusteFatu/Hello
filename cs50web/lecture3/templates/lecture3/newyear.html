@@ -1,0 +1,24 @@
+{% extends "lecture3/layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it New Year's?</title>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 90px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        {% block base %}
+            <h1 style="text-align: center;">IS IT NEW YEARS?</h1>
+            {% if newyear  %}
+                <h1 style="font-weight: bold; font-size: 450px; text-align: center;">YES</h1>    
+            {% else %}
+                <h1 style="font-weight: bold; font-size: 300px; text-align: center;">NO</h1>
+            {% endif %}
+        {% endblock %}
+        </body>
+</html>
